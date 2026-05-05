@@ -1,0 +1,60 @@
+header{
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;;
+    gap: 30px;
+    text-align: center;
+}
+
+.pesquisar{
+    padding: 2rem;
+}
+
+.portAlu{
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.pesqInp{
+    padding: 0.5rem;
+    border-radius: 7px;
+}
+
+.totalBox{
+    display: flex;
+    height: 100vh;
+}
+
+.abaMenu{
+    width: 250px;
+    border-right: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 2rem;
+}
+
+.mainInfo{
+    padding: 30px;
+    border-right: 1px solid #e0e0e0;
+  
+}
+
+.itemMenu{
+
+    color: saddlebrown;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.itemMenu:hover{ /*Efeito ao passar o mouse*/
+    background-color: #0a4b0fa2;
+    width: 60%;
+}
+
+
+label{
+    display: flex;
+}
+ggj
