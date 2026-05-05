@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"
+</head>
+
+ <header>
+
+        <h1 class="portAlu">Portal do aluno</h1></h1>
+        <div class="pesquisar">
+            <input type="text" placeholder="Pesquisar" class="pesqInp"> <br><br>
+        </div>
+
+    </header>
+    
+<body>
+
+    <br>
+    <form id="formMenu"></form>
+    <div class="abaBox">
+        <div class="inicioClass" id="inicioId" onclick="abaInicio('inicio')">Inicío</div><br>
+        <div class="prodClass" id="prodId" onclick="cadProd('produtos')">Cadastrar Produtos</div><br>
+        <div class="meusClass" id="meusId" onclick="meusProdutos('meusprod')">Meus produtos</div><br>
+        <div class="precosClass" id="precosId" onclick="precosP('precos')">Preços</div><br>
+        <div class="configClass" id="configId" onclick="configClick('config')">Configurações</div><br>
+    </div>
+
+    <form id="form-login" onsubmit= abaInicio();>
+
+        <h2>Bem Vindo!</h2>
+    
+    </form>
+
+
+
+
+    <script src="Script.js"></script>
+</body>
+</html>
