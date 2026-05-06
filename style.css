@@ -156,3 +156,8 @@ h3{
     
 
 }
+
+.cadzinho{ /*cor e sombra da fonte do CADASTRO DE NOVO PRODUTO*/
+    color: #030303;
+    text-shadow: 0px 0px 3px #ffffff;
+}
