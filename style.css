@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
 
 .cabecalho{
-    background: linear-gradient(135deg,#24C6DC,#514A9D);
+    background: linear-gradient(135deg, #24C6DC,#514A9D);
     font-family: "Kanit", sans-serif;
     font-weight: 100;
     font-style: normal;
-    color: #ffffffdc;
+    color: #ffffff;
     display: flex;
-    border-bottom: 2px solid #91dce671;
+    border-bottom: 2px solid #26353b;
     gap: 30px;
     text-align: center;
 
@@ -17,12 +21,15 @@
 
 .pesquisar{
     padding: 1rem;
+    margin: 1rem;
 }
 
 .portAlu{
     padding: 0.5rem;
     text-align: center;
     font-size: 2rem;
+    margin: 1rem;
+    text-shadow: 0rem 2px 1px #131213ad;
 }
 
 .pesqInp{
@@ -42,13 +49,13 @@
 
 .abaMenu{
     
-    background: linear-gradient(135deg,#24C6DC,#514A9D);
+    background: linear-gradient(135deg, #24C6DC,#514A9D);
     width: 250px;
-    border-right: 1px solid #e0e0e0;
+    border-right: 2px solid #26353b;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    height: 80vh;
+    height: 84vh;
     
     
 }
@@ -68,11 +75,12 @@
     cursor: pointer;
     padding: 10px;
     border-radius: 5px;
+    margin: 1rem;
 
 }
 
 .itemMenu:hover{ /*Efeito ao passar o mouse*/
-    background-color: #0a0e4ba2;
+    background-color:  #2c5364;
     width: 60%;
 }
 
@@ -90,9 +98,9 @@ label{
 }
 
 .teste{
-    height: 80vh;
+    height: 84vh;
     display:flex;
-    background: #60b6b64b;
+    background:  #6cc8f031;
     
 }
 
@@ -117,9 +125,7 @@ h3{
     font-size: 1rem;
 }
 
-.cadnovFont{
-    line-height: 15px; /*line-height é utilizado para diminuir espaçamento entre linhas */
-}
+
 
 
 
@@ -132,7 +138,7 @@ h3{
 
 .numeri{
     
-    background: linear-gradient(35deg,#514A9D, #24C6DC);
+    background: linear-gradient(35deg, #0f2027, #203a43, #2c5364);
     border-radius: 3rem 2rem 1rem; /*não consegui deixar um redondo perfeito, daí brinquei com as medidas do rem */
     width: 20px;
     padding: 0.2rem;
