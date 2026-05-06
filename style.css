@@ -13,7 +13,7 @@
     font-style: normal;
     color: #ffffff;
     display: flex;
-    border-bottom: 2px solid #26353b;
+    border-bottom: 2px solid #0315506b;
     gap: 30px;
     text-align: center;
 
@@ -51,7 +51,7 @@
     
     background: linear-gradient(135deg, #24C6DC,#514A9D);
     width: 250px;
-    border-right: 2px solid #26353b;
+    border-right: 2px solid #0315506b;
     display: flex;
     flex-direction: column;
     gap: 1rem;
