@@ -70,12 +70,14 @@
 }
 
 .itemMenu{
-
-    color: #ffffffdc;;
+    display: flex;
+    color: #ffffff;;
     cursor: pointer;
     padding: 10px;
     border-radius: 5px;
     margin: 1rem;
+    align-items: center;
+    gap: 12px;
 
 }
 
@@ -103,7 +105,7 @@ label{
     background-image: url("assets/bg.png");
     background-size: cover;
     background-attachment: fixed; 
-    opacity: 0.98;
+    
 }
 
 
