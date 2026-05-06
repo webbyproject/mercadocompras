@@ -62,9 +62,11 @@
 
 .mainInfo{
     
+    display: flex;
+    flex-direction: column;
     padding: 30px;
     border-right: 1px solid #e0e0e0;
-    justify-content:space-between;
+    
     
   
 }
@@ -87,12 +89,21 @@
 }
 
 .definicao{
+    display: flex;
+    flex-direction: column;
     padding: 30px;
     border-right: 1px solid #e0e0e0;
+    text-align: center;
+    align-items: center;
+   
 }
 
 .em{
+     display: flex;
+    flex-direction: column;
     padding: 30px;
+    text-align: center;
+    align-items: center;
 }
 
 label{
@@ -138,6 +149,7 @@ h3{
     flex-direction: row;
     gap: 9px;
     align-items: center;
+    justify-content: center;
 }
 
 .numeri{
@@ -160,4 +172,9 @@ h3{
 .cadzinho{ /*cor e sombra da fonte do CADASTRO DE NOVO PRODUTO*/
     color: #030303;
     text-shadow: 0px 0px 3px #ffffff;
+}
+
+.allinp{
+    border-radius: 4px;
+    padding: 5px;
 }
