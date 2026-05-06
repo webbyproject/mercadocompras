@@ -1,4 +1,13 @@
-header{
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+.cabecalho{
+    background: linear-gradient(135deg,#24C6DC,#514A9D);
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #ffffffdc;
     display: flex;
     border-bottom: 1px solid #e0e0e0;;
     gap: 30px;
@@ -6,7 +15,7 @@ header{
 }
 
 .pesquisar{
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .portAlu{
@@ -15,25 +24,44 @@ header{
 }
 
 .pesqInp{
+    
+    width: 325px;
     padding: 0.5rem;
     border-radius: 7px;
 }
 
 .totalBox{
+    justify-content: center;
     display: flex;
-    height: 100vh;
+    height: 55vh;
+    flex: 1;
+    
 }
 
+.abaPrinc{
+    display: flex;
+    justify-content: center;
+    border: solid 1px;
+    border-radius: 13px;
+    box-shadow: 0px 0px 10px rgba(39, 39, 39, 0.507);
+    
+    
+}
 .abaMenu{
+    justify-content: left;
+    background: linear-gradient(135deg,#24C6DC,#514A9D);
     width: 250px;
     border-right: 1px solid #e0e0e0;
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    margin: 2rem;
+    gap: 1rem;
+    height: 80vh;
+    
+    
 }
 
 .mainInfo{
+    
     padding: 30px;
     border-right: 1px solid #e0e0e0;
   
@@ -53,8 +81,33 @@ header{
     width: 60%;
 }
 
+.definicao{
+    padding: 30px;
+    border-right: 1px solid #e0e0e0;
+}
+
+.em{
+    padding: 30px;
+}
 
 label{
     display: flex;
 }
-ggj
+
+.teste{
+    height: 80vh;
+    display:flex;
+    background: #fcfcfc;
+    
+}
+
+.cadastro{
+    display:flex;
+    
+}
+
+.explic{
+    display: flex;
+    justify-content: center;
+    
+}

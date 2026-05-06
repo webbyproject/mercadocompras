@@ -7,53 +7,80 @@
     <title>Portal do Aluno</title>
     <link rel="stylesheet" href="style.css">
 </head>
-    
+
 <body>
 
-
-    <header> <!--Portal do aluno, pesquisa, login-->
-
-        <h1 class="portAlu">Portal do aluno</h1></h1>
+    <div class="cabecalho"> <!-- cabeçalho -->
+        <h1 class="portAlu">PORTAL DO ALUNO</h1>
         <div class="pesquisar">
-            <input type="text" placeholder="&#128269; Pesquisar" class="pesqInp"> <br><br>
+            <input type="text" placeholder="&#128269; Pesquisar..." class="pesqInp">
         </div>
-
-    </header>
+    </div> <!-- fim .cabecalho -->
 
     <br>
-    <div class="totalBox">    
-        
-        <div class="abaMenu"> <!--Aba do menu: início, produtos,config, etc-->
 
-        <div class="itemMenu" id="inicioId" onclick="abaInicio('inicio')">Inicío</div><br>
-        <div class="itemMenu" id="prodId" onclick="cadProd('produtos')">Cadastrar Produtos</div><br>
-        <div class="itemMenu" id="meusId" onclick="meusProdutos('meusprod')">Meus produtos</div><br>
-        <div class="itemMenu" id="precosId" onclick="precosP('precos')">Preços</div><br>
-        <div class="itemMenu" id="configId" onclick="configClick('config')">Configurações</div><br>
+    <div class="teste"> <!-- container geral (menu + conteúdo) -->
 
-        </div>
+        <div class="abaMenu"> <!-- menu lateral -->
 
-        <div class="mainInfo"> <!--Cadastro de novos produtos MAIN-->
-            <h2> Informações Básicas</h2>
-            <label for="nomeProd">Nome do Produto</label>
-            <input type="text" placeholder="Ex: Jaqueta Aviador"><br><br>
+            <div class="itemMenu">Início</div>
+            <div class="itemMenu">Cadastrar Produtos</div>
+            <div class="itemMenu">Meus produtos</div>
+            <div class="itemMenu">Preços</div>
+            <div class="itemMenu">Configurações</div>
 
-            <label for="desCurt">Descrição Curta</label>
-            <textarea name="descrição" id="descr" rows="3" cols="40" placeholder="Jaqueta zipada..."></textarea>
-        </div>
+        </div> <!-- fim .abaMenu -->
 
-    </div>
+        <div class="totalBox"> <!-- área que centraliza o conteúdo -->
 
+            <div> <!--Div para cadastro de novo produto-->
 
-    <form id="form-login" onsubmit= abaInicio();>
+            <h1>Cadastro de Novo Produto - Passo a Passo</h1><!--texto de explicação-->
+            <h3>Olá Aluno! Preencha as informações abaixo para adicionar um produto.</h3>
+            <div class="abaPrinc"> <!-- caixa principal -->
 
-        <h2>Bem Vindo!</h2>
-    
-    </form>
+                <div class="mainInfo"> <!-- informações básicas -->
+                    <h2>Informações Básicas</h2>
 
+                    <label>Nome do Produto</label>
+                    <input type="text"><br><br>
 
+                    <label>Descrição Curta</label>
+                    <textarea rows="2" cols="25"></textarea>
 
+                    <label>Categoria</label>
+                    <select>
+                        <option>Vestuário</option>
+                        <option>Eletrônicos</option>
+                        <option>Alimentos</option>
+                    </select>
+                </div> <!-- fim .mainInfo -->
 
-    <script src="Script.js"></script>
+                <div class="definicao"> <!-- definição de preços -->
+
+                    <h2>Definição de Preços</h2>
+
+                    <label>Preço de Venda</label>
+                    <input type="text"><br><br>
+
+                    <label>Preço de Custo</label>
+                    <input type="text">
+                </div> <!-- fim .definicao -->
+
+                <div class="em"> <!-- estoque e mídia -->
+
+                    <h2 class="explic">Estoque e Mídia</h2>
+
+                    <label>Quantidade em Estoque</label>
+                    <input type="text">
+                </div> <!-- fim .em -->
+
+            </div> <!-- fim .abaPrinc -->
+
+        </div> <!-- fim .totalBox -->
+
+    </div> <!-- fim .teste -->
+
+    </div> <!--fim de de cadastro de novo produto-->
+
 </body>
-</html>
