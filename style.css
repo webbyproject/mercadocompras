@@ -138,9 +138,9 @@ h3{
 
 .numeri{
     
-    background: linear-gradient(35deg, #0f2027, #203a43, #2c5364);
+    background: linear-gradient(35deg, #24C6DC,#514A9D);
     border-radius: 3rem 2rem 1rem; /*não consegui deixar um redondo perfeito, daí brinquei com as medidas do rem */
-    width: 20px;
+    width: 30px;
     padding: 0.2rem;
     text-align: center;
     color: #e0e0e0;
