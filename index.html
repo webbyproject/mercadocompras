@@ -9,7 +9,7 @@
 </head>
 
 <body>
-
+    
     <div class="cabecalho"> <!-- cabeçalho -->
         <h1 class="portAlu">PORTAL DO ALUNO</h1>
         <div class="pesquisar">
@@ -17,70 +17,81 @@
         </div>
     </div> <!-- fim .cabecalho -->
 
-    <br>
-
     <div class="teste"> <!-- container geral (menu + conteúdo) -->
 
         <div class="abaMenu"> <!-- menu lateral -->
 
-            <div class="itemMenu">Início</div>
-            <div class="itemMenu">Cadastrar Produtos</div>
-            <div class="itemMenu">Meus produtos</div>
-            <div class="itemMenu">Preços</div>
-            <div class="itemMenu">Configurações</div>
+            <div class="itemMenu">INÍCIO</div>
+            <div class="itemMenu">CADASTRAR PRODUTOS</div>
+            <div class="itemMenu">MEU PRODUTOS</div>
+            <div class="itemMenu">PREÇOS</div>
+            <div class="itemMenu">CONFIGURAÇÕES</div>
 
         </div> <!-- fim .abaMenu -->
 
         <div class="totalBox"> <!-- área que centraliza o conteúdo -->
 
-            <div> <!--Div para cadastro de novo produto-->
+            <div class="pass"> <!--Div para cadastro de novo produto-->
 
-            <h1>Cadastro de Novo Produto - Passo a Passo</h1><!--texto de explicação-->
-            <h3>Olá Aluno! Preencha as informações abaixo para adicionar um produto.</h3>
-            <div class="abaPrinc"> <!-- caixa principal -->
+                    <div class="cadnovFont"> <!-- Criada para alterar o espaçamento da fonte entre o "CADASTRO NOVO..." e o "OLA,ALUNO"-->
 
-                <div class="mainInfo"> <!-- informações básicas -->
-                    <h2>Informações Básicas</h2>
+                    <h1>Cadastro de Novo Produto - Passo a Passo</h1><!--texto de explicação-->
+                    <h3>Olá, Aluno! Preencha as informações abaixo para adicionar um produto.</h3>
 
-                    <label>Nome do Produto</label>
-                    <input type="text"><br><br>
+                    </div><br>
 
-                    <label>Descrição Curta</label>
-                    <textarea rows="2" cols="25"></textarea>
+                    <div class="abaPrinc">
 
-                    <label>Categoria</label>
-                    <select>
-                        <option>Vestuário</option>
-                        <option>Eletrônicos</option>
-                        <option>Alimentos</option>
-                    </select>
-                </div> <!-- fim .mainInfo -->
+                        <div class="mainInfo"> <!-- informações básicas -->
+                            
+                            <div class="juntaricon"> <!--Div criada para tentar juntar icon com o label correspondente (funcionou)-->
+        
+                                <h2 class="numeri">1</h2> <h2 class="designtest">Informações Básicas</h2> <!--Classe .numeri criada para tentar formar um círculo no numero-->
+                                <img src="assets\box.png" width="32" height="32">
 
-                <div class="definicao"> <!-- definição de preços -->
+                            </div> <!--fim da .juntaricon-->
 
-                    <h2>Definição de Preços</h2>
+                            <label>Nome do Produto</label>
+                                <input type="text"><br><br>
 
-                    <label>Preço de Venda</label>
-                    <input type="text"><br><br>
+                            <label>Descrição Curta</label>
+                                <textarea rows="2" cols="25"></textarea><br><br>
 
-                    <label>Preço de Custo</label>
-                    <input type="text">
-                </div> <!-- fim .definicao -->
+                            <label>Categoria</label>
+                            <select>
+                                <option>Vestuário</option>
+                                <option>Eletrônicos</option>
+                                <option>Alimentos</option>
+                            </select>
+                        </div> <!-- fim .mainInfo -->
 
-                <div class="em"> <!-- estoque e mídia -->
+                        <div class="definicao"> <!-- definição de preços -->
 
-                    <h2 class="explic">Estoque e Mídia</h2>
+                            <img src="assets\price.png" width="42">
+                            <h2>Definição de Preços</h2>
 
-                    <label>Quantidade em Estoque</label>
-                    <input type="text">
-                </div> <!-- fim .em -->
+                            <label>Preço de Venda</label>
+                                <input type="text"><br><br>
 
-            </div> <!-- fim .abaPrinc -->
+                            <label>Preço de Custo</label>
+                                <input type="text">
+                        </div> <!-- fim .definicao -->
 
-        </div> <!-- fim .totalBox -->
+                        <div class="em"> <!-- estoque e mídia -->
 
-    </div> <!-- fim .teste -->
+                            <img src="assets\camera.png" width="42">
+                            <h2 class="explic">Estoque e Mídia</h2>
 
-    </div> <!--fim de de cadastro de novo produto-->
+                            <label>Quantidade em Estoque</label>
+                            <input type="text">
+                        </div> <!-- fim .em -->
+
+                    </div> <!--Fim .abaPrinc-->
+
+            </div> <!-- fim .pass,cadastro de novo produto -->
+
+        </div> <!-- fim .totalbox -->
+
+    </div> <!--fim de .teste-->
 
 </body>

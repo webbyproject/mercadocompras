@@ -9,9 +9,10 @@
     font-style: normal;
     color: #ffffffdc;
     display: flex;
-    border-bottom: 1px solid #e0e0e0;;
+    border-bottom: 2px solid #91dce671;
     gap: 30px;
     text-align: center;
+
 }
 
 .pesquisar{
@@ -21,6 +22,7 @@
 .portAlu{
     padding: 0.5rem;
     text-align: center;
+    font-size: 2rem;
 }
 
 .pesqInp{
@@ -34,21 +36,12 @@
     justify-content: center;
     display: flex;
     height: 55vh;
-    flex: 1;
+    flex: 1; /*centralizou*/
     
 }
 
-.abaPrinc{
-    display: flex;
-    justify-content: center;
-    border: solid 1px;
-    border-radius: 13px;
-    box-shadow: 0px 0px 10px rgba(39, 39, 39, 0.507);
-    
-    
-}
 .abaMenu{
-    justify-content: left;
+    
     background: linear-gradient(135deg,#24C6DC,#514A9D);
     width: 250px;
     border-right: 1px solid #e0e0e0;
@@ -64,12 +57,14 @@
     
     padding: 30px;
     border-right: 1px solid #e0e0e0;
+    justify-content:space-between;
+    
   
 }
 
 .itemMenu{
 
-    color: saddlebrown;
+    color: #ffffffdc;;
     cursor: pointer;
     padding: 10px;
     border-radius: 5px;
@@ -77,7 +72,7 @@
 }
 
 .itemMenu:hover{ /*Efeito ao passar o mouse*/
-    background-color: #0a4b0fa2;
+    background-color: #0a0e4ba2;
     width: 60%;
 }
 
@@ -97,17 +92,57 @@ label{
 .teste{
     height: 80vh;
     display:flex;
-    background: #fcfcfc;
+    background: #60b6b64b;
     
 }
 
-.cadastro{
-    display:flex;
-    
-}
 
 .explic{
     display: flex;
     justify-content: center;
     
+}
+
+.abaPrinc{
+    background-color: rgb(248, 248, 248);
+    display: flex;
+    border: solid 1px #e0e0e0;
+    border-radius: 13px;
+    box-shadow: 0px 0px 10px rgba(39, 39, 39, 0.507);
+    padding: 1.6rem;
+    
+}
+
+h3{
+    font-size: 1rem;
+}
+
+.cadnovFont{
+    line-height: 15px; /*line-height é utilizado para diminuir espaçamento entre linhas */
+}
+
+
+
+.juntaricon{ /*div criada para colocar o icon ao lado do label (info. básica)*/
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+    align-items: center;
+}
+
+.numeri{
+    
+    background: linear-gradient(35deg,#514A9D, #24C6DC);
+    border-radius: 3rem 2rem 1rem; /*não consegui deixar um redondo perfeito, daí brinquei com as medidas do rem */
+    width: 20px;
+    padding: 0.2rem;
+    text-align: center;
+    color: #e0e0e0;
+    
+}
+
+.designtest{ /*criado para testar um design na fonte*/
+
+    
+
 }
