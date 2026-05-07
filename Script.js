@@ -1,3 +1,6 @@
+/* o ".value" é necessário quando se quer o valor de algum campo, se não o java entende que vc quer o código*/
+
+
 function abaInicio () {
 
 }
