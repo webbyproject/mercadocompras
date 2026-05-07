@@ -2,6 +2,7 @@
 
 /*creatElement é utilizado para criar elementos, por exemplo "document.createElement("li")" - criando uma lista de tarefa com a tag <ul> na html*/
 
+/*apprendChild --- */
 
 function abaInicio () {
 

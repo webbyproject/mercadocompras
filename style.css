@@ -81,6 +81,7 @@
     margin: 1rem;
     align-items: center;
     gap: 12px;
+    
 
 }
 
@@ -171,14 +172,15 @@ h3{
 }
 
 .cadzinho{ /*cor e sombra da fonte do CADASTRO DE NOVO PRODUTO*/
+    
     color: #002e72cb;
     text-shadow: 0px 0px 3px #ffffff;
-
     font-family: "Lexend", sans-serif;
     font-optical-sizing: auto;
     font-weight: <weight>;
     font-style: normal;
-    
+
+
 }
 
 .allinp{
