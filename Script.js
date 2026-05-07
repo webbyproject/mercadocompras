@@ -1,5 +1,7 @@
 /* o ".value" é necessário quando se quer o valor de algum campo, se não o java entende que vc quer o código*/
 
+/*creatElement é utilizado para criar elementos, por exemplo "document.createElement("li")" - criando uma lista de tarefa com a tag <ul> na html*/
+
 
 function abaInicio () {
 
