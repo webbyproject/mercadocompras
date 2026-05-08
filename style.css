@@ -207,5 +207,46 @@ h3{
     padding: 11px;
     border-radius: 5px;
     border: 0px;
+    cursor: pointer;
 
+}
+
+.butt02{
+    padding: 11px;
+    border-radius: 5px;
+    border: 0px;
+    cursor: pointer;
+
+}
+
+#img { /* hashtag utilizada para selecionar id e modifica-lo aqui no css */
+    display: none;
+        }
+
+
+.custom-upload { /* Estilização do label para parecer um botão personalizado */
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+    border: 2.4px solid #ccc;
+    border-radius: 8px;
+    font-family: sans-serif;
+    transition: background 0.3s;
+    border-style: dotted;
+
+}
+
+
+.custom-upload:hover {
+    background-color: #e0e0e0;
+}
+
+
+/* Estilo da imagem da câmera */
+.custom-upload img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
 }
