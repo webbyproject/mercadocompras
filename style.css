@@ -196,9 +196,16 @@ h3{
     padding: 30px;
     justify-content: center;
     gap: 20px;
-    background-color: rgb(248, 248, 248);
+    background: linear-gradient(35deg, #24C6DC,#514A9D);
     border: solid 1px #e0e0e0;
     border-radius: 0px 0px 13px 13px;
-    box-shadow: 0px 3px 0px rgba(39, 39, 39, 0.507);
+    box-shadow: 0px 3px 10px rgba(39, 39, 39, 0.507);
+
+}
+
+button{
+    padding: 11px;
+    border-radius: 5px;
+    border: 0px;
 
 }
