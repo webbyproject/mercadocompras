@@ -235,7 +235,8 @@ h3{
     font-family: sans-serif;
     transition: background 0.3s;
     border-style: dotted;
-
+    width: 30vh;
+    justify-content: center;
 }
 
 
@@ -244,9 +245,19 @@ h3{
 }
 
 
-/* Estilo da imagem da câmera */
-.custom-upload img {
+
+.custom-upload img { /* configuração da imagem da câmera*/
     width: 24px;
     height: 24px;
     margin-right: 8px;
+}
+
+.profito{
+
+    font-size: 0.7rem;
+}
+
+.profitEsq{
+    display: flex;
+    flex-direction:
 }
