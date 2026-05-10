@@ -129,7 +129,7 @@ label{
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
-    width: max-content;
+    width: max-content; /*impediu as escritas de flexionarem e quebrarem linha*/
     min-width: 100%;
     
 }
