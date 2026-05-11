@@ -46,6 +46,7 @@ body{
     width: 325px;
     padding: 0.5rem;
     border-radius: 7px;
+    border: 2.4px solid #ccc;
 }
 
 .totalBox{
@@ -64,9 +65,13 @@ body{
     border-right: 2px solid #0315506b;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
     min-height: 100vh; /*com o min-height defino um tamanho certo/minimo para a altura da aba de menu*/
     height: auto; /*e com o height em auto permito que a altura se ajuste a janela caso o usuario use a pagina em janela dividia*/
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-weight:normal;
+    font-size: 0.9rem;
     
 }
 
@@ -125,6 +130,7 @@ body{
 
 label{
     display: flex;
+  
 }
 
 .teste{
@@ -187,6 +193,9 @@ h3{
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
+     font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 18px;
 
 }
 
@@ -204,7 +213,8 @@ h3{
 .allinp{
     border-radius: 4px;
     padding: 5px;
-    border: solid 1px #9b9a9a;
+    border: solid 1px #e0e0e0;
+    
 }
 
 .butDiv{
@@ -223,9 +233,11 @@ h3{
 .butt01{
     padding: 11px;
     border-radius: 5px;
-    border: 0px;
+    border: solid 2px #e0e0e0;
     cursor: pointer;
     background-color:  #ffffffa8;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
 
 }
 
@@ -234,6 +246,8 @@ h3{
     border-radius: 5px;
     border: 0px;
     cursor: pointer;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
 
 }
 
@@ -280,3 +294,6 @@ h3{
   
 }
 
+.letraA{
+
+}
