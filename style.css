@@ -290,6 +290,9 @@ h3{
 .profito{
 
     font-size: 0.7rem;
+    display: flex;
+    gap: 6px;
+    justify-content: center;
 }
 
 .profitEsq{
@@ -297,6 +300,14 @@ h3{
   
 }
 
-.letraA{
-
+.infoIcon{
+    display: flex;
+    background: #5f5f5fa8;
+    padding: 4px;
+    border-radius: 50%; /*cria um círculo*/
+    width: 13px;
+    height: 13px;
+   color: #ffffff;
+   align-items: center;
+   justify-content: center;
 }
