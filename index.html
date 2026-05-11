@@ -14,7 +14,7 @@
         <h1 class="portAlu">PORTAL DO ALUNO</h1>
             <div class="pesquisar">
                 <input type="text" placeholder="&#128269; Pesquisar..." class="pesqInp">
-            </div>
+            </div> <!--fim .pesquisar-->
     </div> <!-- fim .cabecalho -->
 
     <div class="teste"> <!-- container geral (menu + conteúdo) -->
@@ -32,7 +32,7 @@
 
         </div> <!-- fim .abaMenu -->
 
-        <div class="totalBox"> <!-- área que centraliza o conteúdo -->
+        <div class="totalBox"> <!-- área total que centraliza o conteúdo -->
 
             <div class="pass"> <!--Div para cadastro de novo produto-->
 
@@ -44,87 +44,93 @@
                         <br>
                     </div>
 
-                    <div class="abaPrinc">
+                    <form class="formProduto"> <!-- form deve ser sempre utilizado em formulários e englobar todo o campo de preenchimento do usupario, pois a tag indica ao navegador que esta parte se trata de um formulário, para que ele faça o envio correto dos dados-->
 
-                        <div class="mainInfo"> <!-- informações básicas -->
+                        <div class="abaPrinc"> <!--caixa principal-->
+
+                            <div class="mainInfo"> <!-- informações básicas -->
+                                
+                                <div class="juntaricon"> <!--Div criada para tentar juntar icon com o label correspondente (funcionou)-->
+            
+                                    <h2 class="numeri">1</h2> <h2 class="designtest">Informações Básicas</h2> <!--Classe .numeri criada para tentar formar um círculo no numero-->
+                                    <img src="assets\box.png" width="32" height="32">
+
+                                </div> <!--fim da .juntaricon-->
+
+
+                                <br>
+                                <label>Nome do Produto:</label>
+                                    <input class="allinp" placeholder="Ex: Jaqueta Aviador" type="text"><br><br>
+
+                                <label>Descrição Curta:</label>
+                                    <textarea rows="2" cols="25" placeholder="Ex: aviador zipada azul" class="allinp"></textarea><br><br>
+
+                                <label>Categoria</label>
+                                    <select class="allinp">
+                                        <option>Vestuário</option>
+                                        <option>Eletrônicos</option>
+                                        <option>Alimentos</option>
+                                    </select>
+                            </div> <!-- fim .mainInfo -->
+
+                            <div class="definicao">  <!-- definição de preços -->
+
+                                <div class="juntaricon"> 
+
+                                    <h2 class="numeri">2</h2> <h2 class="designtest">Definição de Preços</h2>
+                                    <img src="assets\price.png" width="42" height="42">
+
+                                </div><!--fim .juntaricon 02-->
+
+                                <br>
+                                
+                                <label>Preço de Venda ($):</label>
+                                    <input class="allinp" placeholder="R$" type="text"><br><br>
+                                
+
+
+                                <label>Preço de Custo:</label>
+                                    <input type="text" placeholder="R$" class="allinp">
+
+                            </div> <!-- fim .definicao -->
+
+                            <div class="em"> <!-- estoque e mídia -->
+
+                                <div class="juntaricon"> 
+
+                                    <h2 class="numeri">3</h2> <h2 class="designtest">Estoque e Mídia</h2>
+                                    <img src="assets\camera.png" width="35" height="35">
+
+                                </div><!--fim .juntaricon 03-->
+
+                                <br><br>
+                                <label>Quantidade em Estoque:</label>
+                                    <input type="text" placeholder="Ex: 100" class="allinp">
                             
-                            <div class="juntaricon"> <!--Div criada para tentar juntar icon com o label correspondente (funcionou)-->
-        
-                                <h2 class="numeri">1</h2> <h2 class="designtest">Informações Básicas</h2> <!--Classe .numeri criada para tentar formar um círculo no numero-->
-                                <img src="assets\box.png" width="32" height="32">
-
-                            </div> <!--fim da .juntaricon-->
-
-
-                            <br>
-                            <label>Nome do Produto:</label>
-                                <input class="allinp" placeholder="Ex: Jaqueta Aviador" type="text"><br><br>
-
-                            <label>Descrição Curta:</label>
-                                <textarea rows="2" cols="25" placeholder="Ex: aviador zipada azul" class="allinp"></textarea><br><br>
-
-                            <label>Categoria</label>
-                                <select class="allinp">
-                                    <option>Vestuário</option>
-                                    <option>Eletrônicos</option>
-                                    <option>Alimentos</option>
-                                </select>
-                        </div> <!-- fim .mainInfo -->
-
-                        <div class="definicao">  <!-- definição de preços -->
-
-                            <div class="juntaricon"> 
-
-                                <h2 class="numeri">2</h2> <h2 class="designtest">Definição de Preços</h2>
-                                <img src="assets\price.png" width="42" height="42">
-
-                            </div><!--fim .juntaricon 02-->
-
-                            <br>
+                               
+                                <br><br>
                             
-                            <label>Preço de Venda ($):</label>
-                                <input class="allinp" placeholder="R$" type="text"><br><br>
-                            
+                            <label>Adicionar Imagem:</label>
+                                <input type="file" id="img" name="img" accept="image/*">
+                                <label for="img" class="custom-upload"><!--Adicionar imagem (utilizei o gemini para aprimorar)-->
+                                    <img src="https://cdn-icons-png.flaticon.com/512/685/685655.png"><!-- imagem de câmera por link e não por assets-->
+                                    <span>Upload</span> <!--A tag span não tem função e pode ser utilizada apenas para estilização no css-->
+                                </label>
 
 
-                            <label>Preço de Custo:</label>
-                                <input type="text" placeholder="R$" class="allinp">
-                        </div> <!-- fim .definicao -->
+                            </div> <!-- fim .em -->
 
-                        <div class="em"> <!-- estoque e mídia -->
-
-                            <div class="juntaricon"> 
-
-                                <h2 class="numeri">3</h2> <h2 class="designtest">Estoque e Mídia</h2>
-                                <img src="assets\camera.png" width="35" height="35">
-
-                            </div><!--fim .juntaricon 03-->
-
-                            <br><br>
-                            <label>Quantidade em Estoque:</label>
-                                <input type="text" placeholder="Ex: 100" class="allinp">
+                        </div> <!--Fim .abaPrinc-->
                         
-                            <br><br>
-                           <input type="file" id="img" name="img" accept="image/*">
+                    
+                        <div class="butDiv"> <!--aba de botões de cadastro de produtos e limpar formulário-->
 
-                        <label>Adicionar Imagem:</label>
-                        <label for="img" class="custom-upload"><!--Adicionar imagem (utilizei o gemini para aprimorar)-->
-                            <img src="https://cdn-icons-png.flaticon.com/512/685/685655.png" alt="Câmera"><!-- imagem de câmera por link e não por assets-->
-                            <span>Upload</span> <!--A tag span não tem função e pode ser utilizada apenas para estilização no css-->
-                        </label>
+                                <button class="butt01">Cadastrar Produto</button>
+                                <button class="butt02"> Limpar Form</button>
 
-
-                        </div> <!-- fim .em -->
-
-                    </div> <!--Fim .abaPrinc-->
-                     
-                  
-                    <div class="butDiv"> <!--aba de botões de cadastro de produtos e limpar formulário-->
-
-                            <button class="butt01">Cadastrar Produto</button>
-                            <button class="butt02"> Limpar Form</button>
-
-                    </div><!--fim .butDiv - botões-->
+                        </div><!--fim .butDiv - botões-->
+                    
+                    </form>
 
                     
             </div> <!-- fim .pass,cadastro de novo produto -->
