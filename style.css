@@ -327,3 +327,9 @@ a {
     text-decoration: none; /* Remove a linha */
     color: inherit;       /* Faz o link ficar com a cor do texto ao redor (opcional) */
 }
+
+.mainFooter{
+    background: linear-gradient(35deg, #24C6DC,#514A9D);
+    text-align: center;
+    color: #e0e0e0;
+}
