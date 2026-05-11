@@ -172,6 +172,8 @@ h3{
     flex-direction: row;
     gap: 9px;
     align-items: center;
+    border-bottom: solid 1px #e0e0e0;
+    height: 70px;
     
 }
 
