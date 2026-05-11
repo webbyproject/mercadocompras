@@ -10,14 +10,15 @@
 
 <body>
     
-    <div class="cabecalho"> <!-- cabeçalho -->
+    <div class="cabecalho"> <!-- cabeçalho, utilizando div e não header-->
         <h1 class="portAlu">PORTAL DO ALUNO</h1>
             <div class="pesquisar">
                 <input type="text" placeholder="&#128269; Pesquisar..." class="pesqInp">
             </div> <!--fim .pesquisar-->
     </div> <!-- fim .cabecalho -->
 
-    <div class="teste"> <!-- container geral (menu + conteúdo) -->
+
+    <main> <!-- box/container geral (menu + conteúdo), tinha utilizado uma div,mas como esta tag englobava todo o conteúdo principal,mudei para a tag <main> pois faz mais sentido -->
 
         <div class="abaMenu"> <!-- menu lateral -->
 
@@ -137,8 +138,7 @@
 
         </div> <!-- fim .totalbox -->
 
-    </div> <!--fim de .teste-->
-
+    </main> <!--fim de <main> -->
 
 <footer>
 

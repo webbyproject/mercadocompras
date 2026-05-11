@@ -24,8 +24,19 @@ body{
     text-align: center;
     width: max-content;
     min-width: 100%;
-    
 
+}
+
+main{
+
+    display:flex;
+    background-image: url("assets/bg.png");
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: max-content; /*impediu as escritas de flexionarem e quebrarem linha*/
+    min-width: 100%;
+    
 }
 
 .pesquisar{
@@ -90,7 +101,7 @@ body{
     display: flex;
     color: #ffffff;;
     cursor: pointer;
-    padding: 10px;
+    padding: 7px;
     border-radius: 5px;
     margin: 1rem;
     align-items: center;
@@ -105,7 +116,8 @@ body{
     background-color:  #2c5364;
     width: auto;
     display: flex;
-    padding: 10px;
+    padding: 7px;
+    border-bottom: solid 1px #24C6DC;
 }
 
 .definicao{
@@ -131,18 +143,6 @@ body{
 label{
     display: flex;
   
-}
-
-.teste{
-
-    display:flex;
-    background-image: url("assets/bg.png");
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 100vh;
-    width: max-content; /*impediu as escritas de flexionarem e quebrarem linha*/
-    min-width: 100%;
-    
 }
 
 
