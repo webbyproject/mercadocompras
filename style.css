@@ -167,13 +167,14 @@ h3{
 
 
 
-.juntaricon{ /*div criada para colocar o icon ao lado do label (info. básica)*/
+.juntaricon{ /*div criada para colocar o icon ao lado do label (info. básica e cia)*/
     display: flex;
     flex-direction: row;
     gap: 9px;
     align-items: center;
     border-bottom: solid 1px #e0e0e0;
     height: 70px;
+
     
 }
 
