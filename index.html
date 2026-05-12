@@ -32,6 +32,7 @@
             <div class="itemMenu"><img src="assets\config.png" width="25" height="25">CONFIGURAÇÕES</div>
 
 
+
         </div> <!-- fim .abaMenu -->
 
         <div class="totalBox"> <!-- área total que centraliza o conteúdo -->
@@ -61,13 +62,13 @@
 
                                 <br>
                                 <label>Nome do Produto:</label>
-                                    <input class="allinp" placeholder="Ex: Jaqueta Aviador" type="text"><br><br>
+                                    <input class="allinp" id="nomeP" placeholder="Ex: Jaqueta Aviador" type="text"><br><br>
 
                                 <label>Descrição Curta:</label>
-                                    <textarea rows="2" cols="25" placeholder="Ex: aviador zipada azul" class="allinp"></textarea><br><br>
+                                    <textarea rows="2" id="descP" cols="25" placeholder="Ex: aviador zipada azul" class="allinp"></textarea><br><br>
 
                                 <label>Categoria</label>
-                                    <select class="allinp">
+                                    <select id="categ" class="allinp">
                                         <option>Vestuário</option>
                                         <option>Eletrônicos</option>
                                         <option>Alimentos</option>
@@ -86,12 +87,12 @@
                                 <br>
                                 
                                 <label>Preço de Venda ($):</label>
-                                    <input class="allinp" placeholder="R$" type="text">
+                                    <input class="allinp" id="precoP" placeholder="R$" type="text">
                                     <span class="profito"> <span class="infoIcon">&#8505;</span> Profito de Calculato = Preço de Venda <br>(R$) = Rl $59.90</span><br>
 
 
                                 <label>Preço de Custo ($):</label>
-                                    <input type="text" placeholder="R$" class="allinp">
+                                    <input type="text" id="quantE" placeholder="R$" class="allinp">
                                     <span class="profito"> <span class="infoIcon">&#8505;</span>Profito de Calculato = Preço de Venda <br>(R$) = Rl $25.00 </span>
 
                             </div> <!-- fim .definicao -->
@@ -127,11 +128,11 @@
                     
                         <div class="butDiv"> <!--aba de botões de cadastro de produtos e limpar formulário-->
 
-                                <button class="butt01">Cadastrar Produto</button>
+                                <button class="butt01" onclick="adicionarProd()">Cadastrar Produto</button>
                                 <button class="butt02"> Limpar Form</button>
 
                         </div><!--fim .butDiv - botões-->
-                    
+                        <script src="Script.js"></script>
                     </form>
 
                     
@@ -142,9 +143,13 @@
     </main> <!--fim de <main> -->
 
 <footer>
-
+    
     <div class="mainFooter">
-       <span> © 2026 [Seu Nome/Empresa]. Todos os direitos reservados.</span>
+        <br>
+        <span> © 2026 C A J U. Todos os direitos reservados.</span>
+     <div class="cajuLogo">
+                <img class="caju" src="assets\logo002.png" width="92" height="92">
+            </div><!--fim .cajuLogo-->
     </div>
 
 </footer>

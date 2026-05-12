@@ -1,5 +1,5 @@
 function adicionarProd() {
-        window.alert("Burro")
+        window.alert("Teste")
         let table = document.getElementById("table")
         let linha = document.createElement("tr")
         let produto = document.getElementById("nomeP").value;

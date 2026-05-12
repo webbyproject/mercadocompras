@@ -329,7 +329,16 @@ a {
 }
 
 .mainFooter{
-    background: linear-gradient(35deg, #24C6DC,#514A9D);
+    background: linear-gradient(35deg,#514A9D);
     text-align: center;
     color: #e0e0e0;
+}
+
+.cajuLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 20vh;
+    
+    
 }
