@@ -367,3 +367,7 @@ a {
     justify-content: right;
     gap: 7px;
 }
+
+.footMenuFont{
+    cursor: pointer;
+}
