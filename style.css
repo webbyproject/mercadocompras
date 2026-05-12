@@ -389,8 +389,8 @@ a {
     padding: 110px;
     background-image: url('assets/robfechado.png');
     background-size: 70%; /* Faz a imagem cobrir todo o elemento */
-    background-repeat: no-repeat; /* Não repete a imagem */
-    background-position: center; /* Centraliza a imagem */ 
+    background-repeat: no-repeat;
+    background-position: center; 
     border-image: solid 4px;
   
 }
