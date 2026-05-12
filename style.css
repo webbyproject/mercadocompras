@@ -347,10 +347,15 @@ a {
     flex-direction:row;
     background-image: url("assets/bgfoot.png");
     color: #e0e0e0;
-    gap: 350px;
+    gap: 440px;
     background-size: cover;
     background-attachment: fixed;
     border-top: 2px solid #0315506b;
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-weight:normal;
+    font-size: 13px;
     
 }
 
@@ -361,5 +366,4 @@ a {
     text-align: right;
     justify-content: right;
     gap: 7px;
-
 }
