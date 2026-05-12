@@ -71,7 +71,7 @@ main{
 .totalBox{
    display: flex;
     justify-content: center; /* Centraliza horizontalmente */
-    /* Alinha o topo */
+
     padding: 2rem;/*ao dividir janela, a box estava encostando na aba de menu, usando o pading da pra se criar uma margem de segurança*/
     flex: 1;
     
@@ -356,6 +356,10 @@ a {
     font-style: normal;
     font-weight:normal;
     font-size: 13px;
+    width: max-content;
+    min-width: 100%;
+    
+    
     
 }
 
@@ -370,4 +374,23 @@ a {
 
 .footMenuFont{
     cursor: pointer;
+}
+
+.roboass{ /*copiando e colando configurações do bg do <main> para que a imagem não se repita no fundo e etc */
+    padding: 110px;
+    background-image: url('assets/robaberto.png');
+    background-size: 70%; 
+    background-repeat: no-repeat; /* Não repete a imagem */
+    background-position: center; /* Centraliza a imagem */
+    transition: 0.1s;
+}
+
+.roboass:hover{
+    padding: 110px;
+    background-image: url('assets/robfechado.png');
+    background-size: 70%; /* Faz a imagem cobrir todo o elemento */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    background-position: center; /* Centraliza a imagem */ 
+    border-image: solid 4px;
+  
 }
