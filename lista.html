@@ -52,8 +52,35 @@
 
                         <div class="abaPrinc02"> <!--caixa principal-->
 
-                           <table id="table"></table>
+                           <table id="table">
+                                <p id="menRecebida"></p>
+
+                           </table><!-- fim de <table>-->
                         
+                        <script>
+                        
+                        const canal = new BroadcastChannel('fluxo_produtos') //conectou as paginas colocando o mesmo nome de canal//
+
+                        
+                        canal.onmessage = function(event) {//onmessage é usado para receber dados em segundo plano//
+                            const produto = event.data; // no ".data" está armazenado o nome, preço e categoria
+                            
+                            const tabela = document.getElementById("table");
+
+                            
+                            const novaLinha = `
+                                <tr>
+                                    <td>${produto.nome}</td>
+                                    <td>${produto.categoria}</td>
+                                    <td>R$ ${produto.preco}</td>
+                                </tr>
+                            `;// uma nova linha (tr) e colunas (td) para a tabela//
+
+                            
+                            tabela.innerHTML += novaLinha; /*insere as novas linhas na tabela, o uso do "+="é como se a novaLinha recebesse ela mesma e mais uma,deixando uma linha embaixo da outra a cada novos itens cadastrados*/
+                        };
+
+                        </script>
 
                         
                     
@@ -87,3 +114,4 @@
     </footer>
 
 </body>
+

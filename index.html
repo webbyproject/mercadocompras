@@ -131,11 +131,36 @@
                     
                         <div class="butDiv"> <!--aba de botões de cadastro de produtos e limpar formulário-->
 
-                                <button class="butt01" onclick="adicionarProd()">Cadastrar Produto</button>
+                                <button class="butt01" onclick="adicionarProd(event)">Cadastrar Produto</button>
                                 <button class="butt02"> Limpar Form</button>
 
                         </div><!--fim .butDiv - botões-->
-                        <script src="Script.js"></script>
+                        <script>
+
+                            const canal = new BroadcastChannel('fluxo_produtos')
+
+                            function adicionarProd(event) {
+                            
+                                event.preventDefault(); /*Evita que a página recarregue e limpe o JS e os dados*/
+
+                               
+                                const nome = document.getElementById("nomeP").value;
+                                const preco = document.getElementById("precoP").value;
+                                const categoria = document.getElementById("categ").value;
+
+                                
+                                const dadosProduto = { /*variavel com as informações adicionadas acima, juntando todas em uma só,para serem enviadas ao canal*/
+                                    nome: nome,
+                                    preco: preco,
+                                    categoria: categoria
+                                };
+
+                               
+                                canal.postMessage(dadosProduto); /*com o postMessage enviamos os dados para o canal, deixando tudo em uma só variavel/const "dadosProduto"*/
+                                
+                                // necessario? >>> alert("Produto enviado com sucesso!");
+                            }
+                        </script>
                     </form>
 
                     
